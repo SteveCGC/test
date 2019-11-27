@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>测试长按事件</title>
+    <script src="./jquery.js"></script>
+    <style>
+        img {
+            width: 100px;
+            height: 100px;
+            user-select: none;
+        }
+    </style>
+</head>
+<body>
+    <img src="./images/damo.jpg">
+    <br>
+    <img src="./images/libai.jpg">
+    <br>
+    <img src="./images/hanxin.jpg">
+    <script>
+        $('img').click(function(event){
+            console.log(event.target.currentSrc)
+        })
+      
+    </script>
+</body>
+</html>
